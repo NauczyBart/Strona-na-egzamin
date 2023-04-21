@@ -1,0 +1,142 @@
+:root {
+    --orange: rgb(255, 191, 105);
+    --blue: rgb(203, 243, 240);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+	font-family: sans-serif;
+}
+
+
+nav {
+	position: fixed;
+    z-index: 1;
+    width: calc(100% - 100px);
+	background-color: var(--orange);
+	height: 18px;
+	text-transform: uppercase;
+	padding: 15px 50px;
+	
+	.link {
+		width: 100px;
+		color: black;
+		font-weight: bold;
+	}
+}
+
+main {
+	> div{padding: 60px 50px;}
+	
+	.upper {
+		background-image: url("orange-pop.png");
+		background-position: center top;
+		background-size: auto 100%;
+		background-color: var(--orange);
+		background-repeat: no-repeat;
+		
+		> .upper-left__container {
+			width: 45%;
+			margin-right: 10px;
+			font-size: 30px;
+			color: white;
+			
+			> h1 {
+				margin: 0;
+				font-size: 120px;
+			}
+			
+			> .button {
+				display: block;
+				margin-top: 50px;
+			}
+			
+		}
+	}
+	.upper-middle {
+		background-color: white;
+		text-align: center;
+		padding: 60px 23%;
+	}
+	.bottom-middle {
+		background-color: var(--blue);
+		text-align: center;
+		
+		> .bottom-middle__offers {
+			display: flex;
+			
+			> .bottom-middle__offers__offer {
+				flex: 1 1 0px;
+				
+				> .offer-image{
+					height: 150px;
+				}
+			}
+		}
+	}
+	.bottom {
+		background-image: url("lightorange-elipse.png");
+		background-position: center top;
+		background-size: auto 90%;
+		background-repeat: no-repeat;
+		background-color: white;
+		display: flex;
+		align-items: center;
+		
+		> .front {
+			width: 50%;
+			padding-right: 10%;
+		}
+		
+		> div > .front-image{
+				width: 60%;
+				height: auto;
+				float: right;
+			}
+		
+	}
+}
+
+footer {
+	background-color: #333333;
+	padding: 15px 5%;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-column-gap: 10%;
+	
+	.link {
+		color: white;
+		margin: auto 0;
+		}
+}
+
+
+.link {
+	text-decoration: none;
+	text-align: center;
+}
+.link--left {
+	float: left;
+	margin: 0;
+}
+.link--right {
+	float: right; 
+	margin: 0 20px;
+}
+
+
+.button {
+	text-transform: uppercase;
+	border: 0;
+}
+.button--blue {
+	background-color: var(--blue);
+	padding: 15px 50px;
+	font-size: 30px;
+}
+.button--orange {
+	background-color: var(--orange);
+	padding: 10px 35px;
+	font-size: 24px;
+}
